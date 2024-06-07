@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 380px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+        }
+
+        .games-section {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #1c1c1c 0%, #333333 100%);
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #ff5e3a, #ff8f3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #222;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            margin: 20px 0 10px;
+            font-size: 24px;
+            color: #ff8f3a;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #ddd;
+            margin: 10px 0 20px;
+        }
+
+        .card .btn {
+            background-color: #ff5e3a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card .btn:hover {
+            background-color: #e04c2e;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="games-section">
+
+        <div class="container">
+
+            <h1>Games Play</h1>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="./Assets/img/genius.png" alt="Game 1">
+                    <h2>Genius</h2>
+                    <p>Jogo para Testar sua memória e sua rapidez com diversão!</p>
+                    <a href="./Assets/games/Genius/index.html" class="btn">Play</a>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="./Assets/img/memoria.png" alt="Game 2">
+                    <h2>Jogo da Memória</h2>
+                    <p>Jogo para testar sua memória se divertindo com o bob esponja</p>
+                    <a href="./Assets/games/Memória/index.html" class="btn">Play</a>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="./Assets/img/pedra.png" alt="Game 3">
+                    <h2>Pedra Papel Tesoura</h2>
+                    <p>Jogo para passar o tempo e se divertir!</p>
+                    <a href="./Assets/games/Pedra_Papel_Tesoura_Completo/index.html" class="btn">Play</a>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="./Assets/img/quizz.png" alt="Game 4">
+                    <h2>Quizapp</h2>
+                    <p>Quiz gastrônomico para se divertir com os amigos!</p>
+                    <a href="./Assets/games/Quizapp/index.html" class="btn">Play</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>&copy; 2024 world of games. Todos os direitos reservados.</p>
+
+    </footer>
+    
+</body>
+
+</html>
